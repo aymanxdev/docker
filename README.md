@@ -13,6 +13,7 @@ FROM node:lts-gallium //use node version image from docker hub
 
 WORKDIR /usr/src/newProject //The absolute or relative path to use as the working directory. Will be created if it does not exist.
 COPY ./ ./  //the first "./" is the root of our project in our local machine, and the second the location we want to copy to our container
+RUN npm install // this is one of the run layers to install the project packages
 
 CMD ["/bin/bash"] // what to run in the container which allows access to bash
 
