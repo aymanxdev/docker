@@ -27,4 +27,5 @@ docker run -d newProject // runs the image container in the background
 docker ps // lists all the container that are currently running
 docker exec -it 'container's hash id' bash // exits and the list goes the hash refernced container bash
 docker stop 'container's hash id' // stops the running container
+docker run -it -p 3000:3000 // container port to host (our machine) port. this way will be able to run it on locally on port 3000 from the container
 ```
