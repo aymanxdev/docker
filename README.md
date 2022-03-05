@@ -22,7 +22,7 @@ Let's test it out and build the image, in the terminal
 
 | Command   | Description  |
 | ------------- | ------------- |
-|`docker build -t newProject`| the "-t" means tag and "." builds all |
+|`docker build -t newProject`| the `-t` means tag and "." builds all |
 |`docker run -it newProject` |this runs the docker container we just created. A hash will be generated for the container and will have access to use node now.|
 
 ```
