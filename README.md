@@ -33,4 +33,24 @@ docker stop 'container's hash id' // stops the running container
 docker run -it -p 3000:3000 // container port to host (our machine) port. this way will be able to run it on locally on port 3000 from the container
 ```
 
+This is `docker-compose.yml` sample to refer to
 
+`volumes` can watch the changes in the container directory and updates as we make changes locally. 
+
+```yml
+
+version: '3.6'
+
+services:
+  app-name:
+    container_name: backend
+    build: ./
+    command: npm start
+    working_dir: /usr/api/src/app-name
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./:/usr/api/src/app-name 
+
+    
+```
