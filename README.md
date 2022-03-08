@@ -35,8 +35,6 @@ docker run -it -p 3000:3000 // container port to host (our machine) port. this w
 
 This is `docker-compose.yml` sample to refer to
 
-`volumes` can watch the changes in the container directory and updates as we make changes locally. 
-
 ```yml
 
 version: '3.6'
@@ -51,6 +49,8 @@ services:
       - "3000:3000"
     volumes:
       - ./:/usr/api/src/app-name 
-
     
 ```
+
+`volumes` can watch the changes in the container directory and updates as we make changes locally. 
+
