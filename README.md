@@ -28,8 +28,9 @@ Let's test it out and build the image, in the terminal
 |`docker ps`|lists all the container that are currently running|
 |docker exec -it 'container's hash id' bash| exits and the list goes the hash refernced container bash|
 |`docker-compose up --build`| this comands brings the container and runs build, this way we wont have to re-run `docker-compose run "name-of-app"` every time we build or make changes |
+|docker stop 'container's hash id'| stops the running container |
+
 ```
-docker stop 'container's hash id' // stops the running container
 docker run -it -p 3000:3000 // container port to host (our machine) port. this way will be able to run it on locally on port 3000 from the container
 ```
 
