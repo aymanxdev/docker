@@ -1,5 +1,5 @@
 # Dcoker 🐬 
-Useful commands to create docker containers and more. Star it for future refernce. 
+Useful commands to create docker containers and more. Star it for future reference. 
 
 Will be adding more here as I continue learning. 
 
